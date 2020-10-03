@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sign Up Page
+{% endblock %}
+
+{% block content %}
+    <div style="margin-top: 20px">
+        <a href="{% url 'teacher_signup' %}">I'm Teacher</a>
+        <a href="{% url 'student_signup' %}">I'm Student</a>
+    </div>
+{% endblock %}

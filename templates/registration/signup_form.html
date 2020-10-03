@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sign Form Page
+{% endblock %}
+
+{% block content %}
+    <p>Sign Up as {{ user_type }}</p>
+    <form method="post" novalidate>
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Sign Up</button>
+    </form>
+{% endblock %}
